@@ -1,0 +1,71 @@
+.dashboard {
+  margin-top: 58px;
+  background-color: black;
+  min-height: 100vh;
+
+  .filmDisplay {
+    padding-top: 8px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    img {
+      height: 400px;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+
+  .filter {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 32px;
+    min-height: 5vh;
+
+    input {
+      margin-left: 10px;
+    }
+  }
+
+  .cardContainer {
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2), 0 4px 7px rgba(0, 0, 0, 0.27);
+    margin: 0.5rem;
+
+    &:hover {
+      transition: all 0.1s;
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.27),
+        0 10px 10px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+.fadeInBck {
+  -webkit-animation: fadeInBck 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fadeInBck 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes fadeInBck {
+  0% {
+    -webkit-transform: translateZ(80px);
+    transform: translateZ(80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInBck {
+  0% {
+    -webkit-transform: translateZ(80px);
+    transform: translateZ(80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
