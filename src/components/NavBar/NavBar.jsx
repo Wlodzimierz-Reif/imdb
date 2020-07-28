@@ -40,6 +40,7 @@ const NavBar = (props) => {
 
   const handleKeyPress = (event) => {
     if (event.key === "Enter") {
+      event.preventDefault();
       search();
     }
   };
